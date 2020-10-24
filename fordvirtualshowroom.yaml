@@ -12,13 +12,13 @@ execution:
   
   capabilities: 
     browserName: chrome
-  hold-for: 60m
+  hold-for: 20m
 
 - executor: jmeter
   scenario: fordshowroom-Http
-  concurrency: 50000
+  concurrency: 20
   ramp-up: 1m
-  hold-for: 60m
+  hold-for: 19m
 
 scenarios:
   fordshowroom-Selenium:
@@ -29,72 +29,52 @@ scenarios:
     requests:
     - label: Test
       actions:
-      - resizeWindow(1680,939)
+      - resizeWindow(1680,843)
       - go(https://d324toaay14uzn.cloudfront.net/index.htm)
-      - clickByXPath(//div[@id='82']/div[2]/div/div/div)
-      - clickByXPath(//div[@id='82']/div[2]/div/div/div)
-      - doubleClickByXPath(//div[@id='82']/div[2]/div/div/div)
-      - clickByXPath(//div[@id='82']/div[2]/div/div/div)
-      - clickByXPath(//div[@id='82']/div[2]/div/div/div)
-      - doubleClickByXPath(//div[@id='82']/div[2]/div/div/div)
-      - clickByXPath(//div[@id='82']/div[2]/div/div/div)
-      - clickByXPath(//div[@id='82']/div[2]/div/div/div)
-      - doubleClickByXPath(//div[@id='82']/div[2]/div/div/div)
-      - clickByXPath(//div[@id='82']/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
+      - clickByXPath(//div[2]/div[2]/div/div/div/div[2]/div/div/div[3]/div[2]/div/div/div)
 
   fordshowroom-Http:
     headers:
-      User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+      User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36'
       Accept: '*/*'
     requests:
       - transaction: Test
         force-parent-sample: false
         do:
-          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_92D50D80_9C3A_A39B_41DB_F4CCB2A0FF4F_0/u/2/0_0.jpg'
+          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_1760E572_0660_F253_4175_363EF30E77C2_0/f/2/0_0.jpg'
             method: GET
-            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_92D50D80_9C3A_A39B_41DB_F4CCB2A0FF4F_0/u/2/0_0.jpg'
+            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_1760E572_0660_F253_4175_363EF30E77C2_0/f/2/0_0.jpg'
             headers: {}
             body:
-              v: '1600449945461'
-          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_92D50D80_9C3A_A39B_41DB_F4CCB2A0FF4F_0/d/2/0_0.jpg'
+              v: '1602154785619'
+          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_1760E572_0660_F253_4175_363EF30E77C2_0/l/2/0_0.jpg'
             method: GET
-            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_92D50D80_9C3A_A39B_41DB_F4CCB2A0FF4F_0/d/2/0_0.jpg'
+            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_1760E572_0660_F253_4175_363EF30E77C2_0/l/2/0_0.jpg'
             headers: {}
             body:
-              v: '1600449945461'
-          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/f/3/0_0.jpg'
+              v: '1602154785619'
+          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_1760E572_0660_F253_4175_363EF30E77C2_0/b/2/0_0.jpg'
             method: GET
-            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/f/3/0_0.jpg'
+            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_1760E572_0660_F253_4175_363EF30E77C2_0/b/2/0_0.jpg'
             headers: {}
             body:
-              v: '1600449945461'
-          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/l/3/0_0.jpg'
+              v: '1602154785619'
+          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_1760E572_0660_F253_4175_363EF30E77C2_0/u/2/0_0.jpg'
             method: GET
-            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/l/3/0_0.jpg'
+            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_1760E572_0660_F253_4175_363EF30E77C2_0/u/2/0_0.jpg'
             headers: {}
             body:
-              v: '1600449945461'
-          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/b/3/0_0.jpg'
-            method: GET
-            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/b/3/0_0.jpg'
-            headers: {}
-            body:
-              v: '1600449945461'
-          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/r/3/0_0.jpg'
-            method: GET
-            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/r/3/0_0.jpg'
-            headers: {}
-            body:
-              v: '1600449945461'
-          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/u/3/0_0.jpg'
-            method: GET
-            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/u/3/0_0.jpg'
-            headers: {}
-            body:
-              v: '1600449945461'
-          - url: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/d/3/0_0.jpg'
-            method: GET
-            label: 'https://d324toaay14uzn.cloudfront.net/media/panorama_9306510D_9C3A_A0A5_41E1_A24A0897C7A8_0/d/3/0_0.jpg'
-            headers: {}
-            body:
-              v: '1600449945461'
+              v: '1602154785619'
